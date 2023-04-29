@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+
+    <head>
+
+        <!-- css sheet start-->
+        
+  
+            <!-- css page sheet end-->    
+            <link rel="stylesheet" type="text/css" href="./css/index.css"/>
+            <!-- css page sheet end-->
+            <!-- css bootstrap3.4.1 sheet end-->    
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <!-- css bootstrap3.4.1 sheet end-->
+            
+            <!-- css sheet start-->
+            
+            <!-- js file start-->                
+            <script src="js/index.js"></script>     
+                <!-- js bootstrap file start-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+                <!-- js bootstrap file end-->
+            
+            <!-- js file end-->
+            
+            <title></title>
+    </head>
+
+<body>
+<div class="container-fluide">
+    <div class="container-fluide header1"></div>
+    <div class="header2">
+        <div class="center"><h1>العرٮى الٯدىم</h1></div>
+        <div class="center hint"><b>موقع لتحويل نصوص اللغة العربية إلى طريقة الكتابة القديمة قبل وضع النقاط على الحروف </b></div>
+    </div>
+    <div style="padding: 20px;">
+        <div class="container textareaDiv ">
+            <div>
+                <div class="col-md-6  col-md-push-6 col-xs-12 textareaClass " >
+                    <b class="maxRight type"> العربي الحديث</b>
+                    <textarea maxlength="1000" id="input" style="font-size: 15pt;" oninput="myFunction()" placeholder=" أدخل النص هنا..."></textarea>
+                    <div class="maxLeft" style="padding:15px ;"><b class="howManyLetter"><span id="letterNumber">0</span>/1000</b></div>           
+                </div>
+                <div class="col-md-6  col-md-pull-6 col-xs-12 textareaClass blueBg translatedArea">
+                    <b class="maxRight type"> العرٮى الٯدىم</b>
+                <textarea id="output" readonly class="blueBg" style="font-size: 15pt;"></textarea>
+             <div class="flex-start ">
+                 <div class="vertical-center">
+                     <svg  onclick="copy()" class="copyIcon pointer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1.7em" height="1.7em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path d="M29.5 7h-19A1.5 1.5 0 0 0 9 8.5v24a1.5 1.5 0 0 0 1.5 1.5h19a1.5 1.5 0 0 0 1.5-1.5v-24A1.5 1.5 0 0 0 29.5 7zM29 32H11V9h18z" class="clr-i-outline clr-i-outline-path-1" fill="#000437"/><path d="M26 3.5A1.5 1.5 0 0 0 24.5 2h-19A1.5 1.5 0 0 0 4 3.5v24A1.5 1.5 0 0 0 5.5 29H6V4h20z" class="clr-i-outline clr-i-outline-path-2" fill="#000437"/></svg>
+                 </div>
+                 <div class="vertical-center">
+                     <span class="savedHide" id="saved"><b>تم النسخ</b></span>
+                 </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+</div>    
+
+
+</html>
